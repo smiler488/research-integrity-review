@@ -6,18 +6,22 @@
 
 ## 安装
 
-一条命令，把仓库克隆到你所用 AI 工具的 skills 目录（skill 目录是工具存放技能的固定文件夹）：
+**一句话安装**：复制下面这句发给你在用的 AI 助手（WorkBuddy、Claude Code、Codex 等），它会自动完成安装：
+
+```text
+请根据 https://raw.githubusercontent.com/smiler488/research-integrity-review/main/install.md，安装 research-integrity-review。
+```
+
+手动安装：把本仓库克隆（或下载解压）到你的 AI 工具的 skills 目录即可（skill 目录是工具存放技能的固定文件夹）：
 
 ```bash
 git clone https://github.com/smiler488/research-integrity-review.git
 ```
 
-克隆后把整个文件夹移进对应目录即可：
-
 | 工具 | skills 目录 |
 | --- | --- |
-| Claude Code | `~/.claude/skills/` |
 | WorkBuddy / CodeBuddy | `~/.workbuddy/skills/` |
+| Claude Code | `~/.claude/skills/` |
 | Codex CLI | `~/.codex/skills/` |
 
 Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。不想用命令行的话，也可以直接下载仓库里的 `research-integrity-review.skill` 安装包，在 AI 工具的技能管理里导入。不支持 skill 的 AI 工具（网页版 ChatGPT、DeepSeek、Kimi 等）：直接把 [SKILL.md](./SKILL.md) 正文整体复制成对话的第一条消息，效果相同。
