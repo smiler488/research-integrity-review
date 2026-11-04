@@ -20,7 +20,7 @@ git clone https://github.com/smiler488/research-integrity-review.git
 | WorkBuddy / CodeBuddy | `~/.workbuddy/skills/` |
 | Codex CLI | `~/.codex/skills/` |
 
-Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。不支持 skill 的 AI 工具（网页版 ChatGPT、DeepSeek、Kimi 等）：直接把 [SKILL.md](./SKILL.md) 正文整体复制成对话的第一条消息，效果相同。
+Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。不想用命令行的话，也可以直接下载仓库里的 `research-integrity-review.skill` 安装包，在 AI 工具的技能管理里导入。不支持 skill 的 AI 工具（网页版 ChatGPT、DeepSeek、Kimi 等）：直接把 [SKILL.md](./SKILL.md) 正文整体复制成对话的第一条消息，效果相同。
 
 ## 使用
 
