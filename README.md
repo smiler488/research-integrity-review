@@ -6,18 +6,19 @@
 
 ## 安装
 
-把本仓库克隆（或下载解压）到你的 AI 工具的 skills 目录：
+一条命令，把仓库克隆到你所用 AI 工具的 skills 目录（skill 目录是工具存放技能的固定文件夹）：
 
 ```bash
-# Claude Code
-git clone https://github.com/smiler488/research-integrity-review.git ~/.claude/skills/research-integrity-review
-
-# WorkBuddy / CodeBuddy
-git clone https://github.com/smiler488/research-integrity-review.git ~/.workbuddy/skills/research-integrity-review
-
-# Codex CLI
-git clone https://github.com/smiler488/research-integrity-review.git ~/.codex/skills/research-integrity-review
+git clone https://github.com/smiler488/research-integrity-review.git
 ```
+
+克隆后把整个文件夹移进对应目录即可：
+
+| 工具 | skills 目录 |
+| --- | --- |
+| Claude Code | `~/.claude/skills/` |
+| WorkBuddy / CodeBuddy | `~/.workbuddy/skills/` |
+| Codex CLI | `~/.codex/skills/` |
 
 Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。不支持 skill 的 AI 工具（网页版 ChatGPT、DeepSeek、Kimi 等）：直接把 [SKILL.md](./SKILL.md) 正文整体复制成对话的第一条消息，效果相同。
 
