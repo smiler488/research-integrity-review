@@ -27,5 +27,5 @@
 
 ## 说明
 
-- 本 skill 只含说明文件（SKILL.md / README / LICENSE），无可执行代码，安装即复制文件夹。
+- 本 skill 只含说明文件（SKILL.md / README / LICENSE / install.md），无可执行代码，安装即复制文件夹。
 - 网页版 AI（无 skills 目录）：跳过以上步骤，直接把仓库里 SKILL.md 的正文整段读入并作为本次对话的行为准则，效果相同。
