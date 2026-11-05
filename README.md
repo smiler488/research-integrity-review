@@ -1,51 +1,47 @@
-# research-integrity-review · 科研诚信投稿前审查 Skill
+# research-integrity-review
 
-给通讯作者的 AI 审查 skill：投稿前让 AI 按「图像操纵 / 数据伪造 / 文本与流程造假 / 生成式 AI 新形态」四类造假手法逐项筛查稿件，输出 🔴🟠🟡🟢 四级疑点报告。只报告疑点和证据，不下"造假"结论，所有命中项以原始数据人工复核为准。
+English | [中文](README.zh-CN.md)
 
-配套文章：《CNS 论文造假的常见手段，与通讯作者的审查清单》（微信公众号 @smiler488）。
+An Agent Skill that reviews a manuscript for research-integrity risks before submission, from the corresponding author's side. It goes through four groups of known manipulation patterns: image manipulation, data fabrication, text and process fraud, and newer forms involving generative AI. The result is a report graded 🔴 / 🟠 / 🟡 / 🟢. It reports suspicious points and the evidence for them, never a verdict of misconduct. Every hit has to be checked against the raw data by a person.
 
-## 安装
+It accompanies my WeChat article 《CNS 论文造假的常见手段，与通讯作者的审查清单》 (account @smiler488). The point is to catch problems in your own group's work before an editor or a reader on PubPeer does.
 
-**一句话安装**：复制下面这句发给你在用的 AI 助手（WorkBuddy、Claude Code、Codex 等），它会自动完成安装：
+## Install
+
+Tell your assistant (WorkBuddy, Claude Code, Codex, …):
 
 ```text
-请根据 https://raw.githubusercontent.com/smiler488/research-integrity-review/main/install.md，安装 research-integrity-review。
+Install research-integrity-review following https://raw.githubusercontent.com/smiler488/research-integrity-review/main/install.md
 ```
 
-手动安装：把本仓库克隆（或下载解压）到你的 AI 工具的 skills 目录即可（skill 目录是工具存放技能的固定文件夹）：
+Or by hand:
 
 ```bash
-git clone https://github.com/smiler488/research-integrity-review.git
+git clone --depth 1 https://github.com/smiler488/research-integrity-review.git ~/.claude/skills/research-integrity-review
 ```
 
-| 工具 | skills 目录 |
+Other tools use `~/.codex/skills/`, `~/.workbuddy/skills/` and so on (see `install.md`). `research-integrity-review.skill` is the same content as a package for tools that import skill files. Chat assistants without skills (ChatGPT, DeepSeek, Kimi on the web) work too: paste the body of [SKILL.md](SKILL.md) as the first message.
+
+## Use
+
+1. Say "review my manuscript with research-integrity-review", or type `/research-integrity-review`.
+2. Provide the manuscript (text, figures, legends), raw data excerpts if available, and the supplement.
+3. Work figure by figure, one or two modules at a time. This finds more than handing over the whole paper at once.
+4. Check every 🔴 and 🟠 item against the original records before drawing any conclusion.
+
+## Modules
+
+| Module | Covers |
 | --- | --- |
-| WorkBuddy / CodeBuddy | `~/.workbuddy/skills/` |
-| Claude Code | `~/.claude/skills/` |
-| Codex CLI | `~/.codex/skills/` |
+| A Images and figures | reused / mirrored / relabelled panels, spliced blots, odd flow-cytometry clouds, spectra that break physics, n and error bars that do not match |
+| B Data and statistics | identical or fixed-ratio values across groups, impossible percentages, statistics that do not add up, claims stronger than the data, traceability |
+| C Text and references | reproducibility, misidentified cell lines, unsuitable antibodies, references that do not exist, duplicate publication, paper-mill templates |
+| D Authorship, ethics, statements | gift or purchased authorship, ethics approvals, conflicts of interest, AI-use statements |
 
-Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。不想用命令行的话，也可以直接下载仓库里的 `research-integrity-review.skill` 安装包，在 AI 工具的技能管理里导入。不支持 skill 的 AI 工具（网页版 ChatGPT、DeepSeek、Kimi 等）：直接把 [SKILL.md](./SKILL.md) 正文整体复制成对话的第一条消息，效果相同。
+## Limits
 
-## 使用
-
-1. 对 AI 说：**"用 research-integrity-review 审查我的稿件"**（或直接输入 `/research-integrity-review`）。
-2. 按提示提供：①论文稿件（正文、图表、图注）；②原始数据摘录（可缺省）；③补充材料。
-3. 按图表分批、每次聚焦一到两个模块，检出效果比一次塞整篇好。
-4. 收到分级报告后，🔴🟠 项逐条调取原始记录人工复核再定性。
-
-## 检查模块
-
-| 模块 | 覆盖 |
-| --- | --- |
-| A 图像与图表完整性 | 图复用/镜像/换标签、条带合成特征、流式散点图异常、谱图物理常识、样本量与误差线咬合 |
-| B 数据真实性与统计自洽 | 组间逐点相同/固定倍数、百分比合理性、统计结果咬合、结论强度、数据可追溯 |
-| C 文本与参考文献 | 可复现性、假细胞系/不匹配抗体、引用真实性、重复发表、论文工厂模板痕迹 |
-| D 署名、伦理与声明 | 挂名/交易署名/作者拼盘、伦理审批、利益冲突与 AI 使用声明 |
-
-## 边界与免责
-
-本 skill 输出只做筛查参考，不构成对任何人的学术不端认定。像素级图片查重请交 ImageTwin、Proofig、FigCheck 等专用工具；未发表稿件与数据请脱敏后再上传第三方服务。
+The output is a screening aid. It does not establish misconduct by anyone. For pixel-level image duplication use dedicated tools such as ImageTwin, Proofig or FigCheck. Remove identifying details from unpublished manuscripts and data before uploading them to any third-party service.
 
 ## License
 
-MIT
+MIT, see [LICENSE](LICENSE). Liangchao Deng (邓良超).
