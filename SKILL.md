@@ -1,6 +1,10 @@
 ---
 name: research-integrity-review
 description: 科研诚信投稿前审查（通讯作者视角）。当通讯作者/作者在投稿前要求审查稿件的学术不端风险、数据可靠性、图像完整性、署名与声明合规时使用。按图像操纵、数据伪造、文本与流程造假、生成式 AI 新形态四类造假手法逐项筛查，输出分级疑点报告。触发词：投稿前审查、科研诚信审查、学术不端检查、稿件体检、integrity review。
+license: MIT
+metadata:
+  author: Liangchao Deng (smiler488)
+  version: "1.1.0"
 ---
 
 # 科研诚信投稿前审查
