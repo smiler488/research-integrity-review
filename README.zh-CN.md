@@ -2,6 +2,7 @@
 
 [English](README.md) | 中文
 
+[![CI](https://github.com/smiler488/research-integrity-review/actions/workflows/validate.yml/badge.svg)](https://github.com/smiler488/research-integrity-review/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Agent Skill](https://img.shields.io/badge/Agent_Skill-informational)
 我给通讯作者写的一个 AI 审查 skill：投稿前让 AI 按「图像操纵 / 数据伪造 / 文本与流程造假 / 生成式 AI 新形态」四类造假手法逐项筛查稿件，输出 🔴🟠🟡🟢 四级疑点报告。只报告疑点和证据，不下"造假"结论，所有命中项以原始数据人工复核为准。
 
 配套文章：《CNS 论文造假的常见手段，与通讯作者的审查清单》（微信公众号 @smiler488）。

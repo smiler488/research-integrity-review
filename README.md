@@ -2,6 +2,7 @@
 
 English | [中文](README.zh-CN.md)
 
+[![CI](https://github.com/smiler488/research-integrity-review/actions/workflows/validate.yml/badge.svg)](https://github.com/smiler488/research-integrity-review/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Agent Skill](https://img.shields.io/badge/Agent_Skill-informational)
 An Agent Skill that reviews a manuscript for research-integrity risks before submission, from the corresponding author's side. It goes through four groups of known manipulation patterns: image manipulation, data fabrication, text and process fraud, and newer forms involving generative AI. The result is a report graded 🔴 / 🟠 / 🟡 / 🟢. It reports suspicious points and the evidence for them, never a verdict of misconduct. Every hit has to be checked against the raw data by a person.
 
 It accompanies my WeChat article 《CNS 论文造假的常见手段，与通讯作者的审查清单》 (account @smiler488). The point is to catch problems in your own group's work before an editor or a reader on PubPeer does.
