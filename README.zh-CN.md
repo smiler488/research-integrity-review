@@ -48,6 +48,6 @@ Windows 下把 `~/` 换成用户目录（如 `C:\Users\<你>\`）对应路径。
 
 本 skill 输出只做筛查参考，不构成对任何人的学术不端认定。像素级图片查重请交 ImageTwin、Proofig、FigCheck 等专用工具；未发表稿件与数据请脱敏后再上传第三方服务。
 
-## License
+## 许可证
 
-MIT
+MIT，见 [LICENSE](LICENSE)。邓良超（Liangchao Deng）。
